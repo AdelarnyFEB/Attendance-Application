@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendace Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    //Attendance Form
+    <h1>Attendance Application For Programming Class</h1>
+    <form id="registrationForm">
+        <label for="Name"> Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required/> &nbsp;
+        <label for="Class">Class:</label>
+        <select name="class" id="class">
+            <option value="JavaScript">JavaScript</option>
+            <option value="Python">Python</option>
+            <option value="C++">C++</option>
+            <option value="C#">C#</option>
+          </select> &nbsp;
+        <label for="SeatNum">Seat Number:</label>
+        <input type="number" id="seatNum" name="seatNum" min="001" max="100"> &nbsp;
+        <button type="submit" id="button" value="Register">Register</button>
+      </form>
+    
+      <h2>Registered Names, Classes and Seat Number:</h2>
+<table id="registrationTable">
+  <tr>
+      <th>Name</th>
+      <th>Class</th>
+      <th>Seat Number</th>
+      <th>Attendance</th>   
+  </tr>
+</table>
+    <script src="script.js"></script>
+      
+</body>
+</html>
